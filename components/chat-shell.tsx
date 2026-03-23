@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const storageKey = "levelwellness-thread-id";
 
 function getApiBase() {
-  return process.env.NEXT_PUBLIC_API_BASE_URL ?? "/backend";
+  return process.env.NEXT_PUBLIC_API_BASE_URL ?? "/api";
 }
 
 const starterPrompts = [
@@ -227,7 +227,7 @@ export function ChatShell() {
                     Pergunta como se estivesses a falar com um analista senior de LLM infra.
                   </h2>
                   <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                    A interface foi preparada para correr no Vercel com frontend Next.js, backend FastAPI e persistencia em KV para historico de conversas.
+                    A interface foi preparada para correr no Vercel com frontend Next.js, App Router API Routes e persistencia em KV para historico de conversas.
                   </p>
                 </div>
 
